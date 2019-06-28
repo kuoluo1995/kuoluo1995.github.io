@@ -1,21 +1,21 @@
-<footer class='site_footer'>
+<footer id='site_footer'>
 	<div class='wrapper'>
-		<p class='description'>
-			{% if site.footer_description %}{{ site.footer_description }}{% endif %}
-		</p>
+		<hr>
+		{% if site.footer_description %}
+			<p class='description'>{{ site.footer_description }}</p>
+		{% endif %}
 		<p class='contact'>
-			<span>Contact me at:</span>
+			<span>联系方式:</span>
 			{% if site.github_username %}
-				<a href='https://github.com/{{ site.github_username }}' title='GitHub'><i class='fa fa-github'
-				                                                                          aria-hidden='true'></i></a>
+				<a href='https://github.com/{{ site.github_username }}' title='GitHub'>
+					<span class='iconfont icon-github-fill' aria-hidden='true'></span>
+				</a>
 			{% endif %}
 			{% if site.email %}
-				<a href='mailto:{{ site.email }}' title='Email'><i class='fa fa-envelope-o'
-				                                                   aria-hidden='true'></i></a>
+				<a href='mailto:{{ site.email }}' title='Email'>
+					<span class='iconfont icon-skype-fill' aria-hidden='true'></span>
+				</a>
 			{% endif %}
-		</p>
-		<p>
-			本站总访问量<span id=''></span>次，本站访客数<span id=''></span>人次，本文总阅读量<span id=''></span>次
 		</p>
 	</div>
 </footer>

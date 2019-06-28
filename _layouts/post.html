@@ -1,18 +1,21 @@
 ---
 layout: default
 ---
-<div class='page clearfix' post>
-	<div class='left'>
-		<h1>{{ page.title }}</h1>
-		<div class='label'>
-			<div class='label-card'>
-				<i class='fa fa-calendar'></i>{{ page.date }}
-			</div>
-		</div>
-		<hr/>
-		<article itemscope itemtype="http://schema.org/BlogPosting">
-			{{ content }}
-		</article>
-		<hr/>
+<div id='post'>
+	<span class='title'>{{ page.title }}</span>
+	<div class='sub_title'>
+		<span>日期: <span>{{ page.date | date: '%Y-%m-%d' }}</span></span>
+		{% if page.update %}
+			<span>更新: <span>{{ page.date | date: '%Y-%m-%d' }}</span></span>
+		{% endif %}
+		<span>分类: <span>{{ page.categories }}</span></span>
+	</div>
+	<div class='contest'>{{ content }}</div>
+	<div class='card_footer'>
+		<ul>
+			{% for tag in page.tags %}
+				<li>#{{ tag }}</li>
+			{% endfor %}
+		</ul>
 	</div>
 </div>

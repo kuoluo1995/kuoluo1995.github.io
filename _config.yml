@@ -1,6 +1,5 @@
 # Site setting
 title: 阔落的博客
-baseurl: ''
-# statistic analysis 统计代码
-baidu_analytics_id:
-google_analytics_id:
+github_username: 'kuoluo1995@gmail.com'
+email: '799178334@qq.com'
+footer_description: '不会写前端的Java程序员，不是个好的深度学习研究者'
