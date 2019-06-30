@@ -1,0 +1,38 @@
+#post {
+    border-radius: 0 0 20px 20px;
+    padding: 5% 5% 0;
+}
+
+#post .title {
+    color: #000;
+    font-size: 300%;
+    margin: 1%;
+}
+
+#post .sub_title {
+    color: gray;
+}
+
+#post .sub_title span {
+    padding: 0 2%;
+}
+
+#post .contest {
+    padding: 2%;
+}
+
+#post .card_footer {
+    padding: 2% 0;
+}
+
+#post .card_footer ul {
+    color: gray;
+    float: right;
+    list-style: none;
+}
+
+#post .card_footer li {
+    display: inline-block;
+}
+
+/*# sourceMappingURL=post.css.map */
