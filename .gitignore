@@ -5,7 +5,6 @@ _site/
 ### JetBrains template
 # User-specific stuff
 .idea
-.gitignore
 
 assets/sass/*.css
 assets/sass/*.map
