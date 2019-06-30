@@ -1,26 +1,24 @@
 #site_header {
-  .wrapper {
+  display: block;
+  margin: auto;
+  padding: 1%;
+
+  .brand {
+    font-size: 300%;
+    font-weight: bolder;
+    margin-left: 5%;
+    padding: 2%;
+  }
+
+  .nav {
+    background: black;
+    border-radius: 5px;
     display: block;
-    margin: auto;
-    padding: 1%;
+    margin: 2% 0;
+    padding: 2%;
 
-    .brand {
-      font-size: 300%;
-      font-weight: bolder;
-      margin-left: 5%;
-      padding: 2%;
-    }
-
-    .nav {
-      background: black;
-      border-radius: 5px;
-      display: block;
-      margin: 2% 0;
-      padding: 2%;
-
-      a {
-        color: aliceblue;
-      }
+    a {
+      color: aliceblue;
     }
   }
 }

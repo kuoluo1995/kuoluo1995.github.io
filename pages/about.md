@@ -2,7 +2,7 @@
 layout: page
 title: 关于我
 icon: icon-zhanghaoquanxianguanli
-priority: 2
+priority: 3
 ---
 ![一个神秘的男人](../assets/images/me.png)
 
