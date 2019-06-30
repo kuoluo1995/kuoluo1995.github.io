@@ -1,15 +1,13 @@
 ---
 ---
 
-@import 'header', 'body', 'footer', 'post';
-
 .active {
   color: red;
   font-weight: bolder;
 }
 
 * {
-  font-family: "Microsoft YaHei UI";
+
 }
 
 body, ul, p, h1, h2, h3 {
@@ -39,3 +37,4 @@ li {
   z-index: -100;
 }
 
+@import 'header', 'body', 'footer', 'post';
