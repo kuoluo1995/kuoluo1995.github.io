@@ -1,5 +1,8 @@
 ---
 ---
+
+@import 'header', 'body', 'footer', 'post';
+
 .active {
   color: red;
   font-weight: bolder;
@@ -36,4 +39,3 @@ li {
   z-index: -100;
 }
 
-@import 'header', 'body', 'footer', 'post';
