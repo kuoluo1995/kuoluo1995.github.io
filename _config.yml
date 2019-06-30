@@ -5,5 +5,5 @@ email: '799178334@qq.com'
 footer_description: '不会写前端的Java程序员，不是个好的深度学习研究者'
 
 sass:
-  sass_dir: assets/sass
+  sass_dir: /assets/sass
   style: compressed
