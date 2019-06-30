@@ -3,7 +3,7 @@
 		<span class='brand'>{{ site.title }}</span>
 		<nav class='nav'>
 			<ul>
-				{% assign my_pages=site.pages| sort_natural: 'priority'| where: 'layout', 'page' %}
+				{% assign my_pages=site.pages| sort: 'priority'| where: 'layout', 'page' %}
 				{% for my_page in my_pages %}
 					<li><a href='{{ my_page.url }}' {% if page.url == my_page.url %}class='active'{% endif %}>
 							<span class='iconfont {{ my_page.icon }}'></span><span class=''>{{ my_page.title }}</span>
