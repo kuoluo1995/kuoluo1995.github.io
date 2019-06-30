@@ -1,5 +1,3 @@
-@import url(footer.css);
-
 .active {
     color: red;
     font-weight: bolder;
@@ -120,6 +118,16 @@ li {
 
 #site_body .list_posts .post_card .card_footer a {
     color: black;
+}
+
+#site_footer {
+    padding: 2% 0;
+    text-align: center;
+}
+
+#site_footer .wrapper {
+    margin: auto;
+    width: 95%;
 }
 
 #post {
