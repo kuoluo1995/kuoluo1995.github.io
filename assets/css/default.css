@@ -1,22 +1,22 @@
 .active {
   color: red;
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 body, ul, p, h1, h2, h3 {
-  margin: 0;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .nav ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 li {
-  margin: 0 10px;
+    margin: 0 10px;
 }
 
 #background {
@@ -27,60 +27,60 @@ li {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: -100;
+    z-index: -100;
 }
 
 #site_body {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 20px 20px;
   margin: auto;
-  width: 80%;
+    width: 80%;
 }
 
 #site_body .list_posts {
     list-style: none;
-  padding: 5% 5% 0;
+    padding: 5% 5% 0;
 }
 
 #site_body .list_posts .post_card {
-  border-bottom: solid gray 1px;
-  margin: 5% auto;
+    border-bottom: solid gray 1px;
+    margin: 5% auto;
 }
 
 #site_body .list_posts .post_card .title {
-  color: #000;
-  font-size: 300%;
-  margin: 1%;
+    color: #000;
+    font-size: 300%;
+    margin: 1%;
 }
 
 #site_body .list_posts .post_card .sub_title {
-  color: gray;
+    color: gray;
 }
 
 #site_body .list_posts .post_card .sub_title span {
-  padding: 0 2%;
+    padding: 0 2%;
 }
 
 #site_body .list_posts .post_card .abstract {
-  padding: 2%;
+    padding: 2%;
 }
 
 #site_body .list_posts .post_card .card_footer {
-  padding: 2% 0;
+    padding: 2% 0;
 }
 
 #site_body .list_posts .post_card .card_footer ul {
-  color: gray;
-  float: right;
-  list-style: none;
+    color: gray;
+    float: right;
+    list-style: none;
 }
 
 #site_body .list_posts .post_card .card_footer li {
-  display: inline-block;
+    display: inline-block;
 }
 
 #site_body .list_posts .post_card .card_footer a {
-  color: black;
+    color: black;
 }
 
 /*# sourceMappingURL=default.css.map */
