@@ -68,7 +68,7 @@ li {
 
 #site_body .list_posts {
     list-style: none;
-  padding: 5% 0;
+  padding: 0 5%;
 }
 
 #site_body .list_posts .post_card {
