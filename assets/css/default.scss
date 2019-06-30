@@ -4,7 +4,7 @@
 }
 
 * {
-
+  font-family: "Microsoft YaHei UI";
 }
 
 body, ul, p, h1, h2, h3 {
@@ -34,4 +34,4 @@ li {
   z-index: -100;
 }
 
-@import 'body';
+@import 'header', 'body', 'footer', 'post';
