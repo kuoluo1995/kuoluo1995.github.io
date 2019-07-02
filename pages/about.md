@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_body
 title: 关于我
 icon: icon-zhanghaoquanxianguanli
 priority: 3

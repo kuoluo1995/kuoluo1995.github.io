@@ -1,0 +1,48 @@
+#body {
+  padding: 0 5%;
+}
+
+.list_posts {
+  list-style: none;
+
+  .card {
+    border-bottom: solid gray 1px;
+    margin: 2% auto;
+
+    .title {
+      color: black;
+      font-size: 300%;
+      padding: 1%;
+    }
+
+    .sub_title {
+      color: gray;
+
+      span {
+        padding: 0 2%;
+      }
+    }
+
+    .card_body {
+      padding: 1%;
+    }
+
+    .card_footer {
+      padding: 2% 0;
+
+      .more {
+        color: black;
+      }
+
+      .tags {
+        color: gray;
+        float: right;
+        list-style: none;
+
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

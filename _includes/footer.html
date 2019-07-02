@@ -1,19 +1,13 @@
 <footer id='site_footer'>
     <hr>
-    {% if site.footer_description %}
-        <p class='description'>{{ site.footer_description }}</p>
-    {% endif %}
+    <p class='description'>{{ site.footer_description }}</p>
     <p class='contact'>
         <span>联系方式:</span>
-        {% if site.github_username %}
-            <a href='https://github.com/{{ site.github_username }}' title='GitHub'>
-                <span class='iconfont icon-github-fill' aria-hidden='true'></span>
-            </a>
-        {% endif %}
-        {% if site.email %}
-            <a href='mailto:{{ site.email }}' title='Email'>
-                <span class='iconfont icon-skype-fill' aria-hidden='true'></span>
-            </a>
-        {% endif %}
+        <a href='https://github.com/{{ site.github_username }}' title='GitHub'>
+            <span class='iconfont icon-github-fill' aria-hidden='true'></span>
+        </a>
+        <a href='mailto:{{ site.email }}' title='Email'>
+            <span class='iconfont icon-skype-fill' aria-hidden='true'></span>
+        </a>
     </p>
 </footer>

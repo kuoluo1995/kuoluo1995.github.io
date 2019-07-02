@@ -2,21 +2,10 @@
 	<meta charset='UTF-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{{ site.title }}</title>
 
 	<link rel='shortcut icon' href='/assets/ico/favicon.ico?' type='image/x-icon'>
 	<link rel='icon' href='/assets/ico/favicon.ico?' type='image/x-icon'>
 	<link rel='stylesheet' href='/assets/ico/iconfont.css'>
 	<link rel='stylesheet' href='/assets/sass/default.css'>
-
-	{% if  site.baidu_analytics_id %}
-		<script>
-            // 百度统计代码
-		</script>
-	{% endif %}
-	{% if  site.google_analytics_id %}
-		<script>
-            // google analytics
-		</script>
-	{% endif %}
 </head>

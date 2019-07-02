@@ -1,16 +1,10 @@
 ---
 ---
-
-.active {
-  color: red;
-  font-weight: bolder;
-}
-
 * {
   font-family: "Microsoft YaHei UI";
 }
 
-body, ul, p, h1, h2, h3 {
+body, header, footer, ul, li, p, h1, h2, h3, div {
   margin: 0;
   padding: 0;
 }
@@ -23,8 +17,9 @@ a {
   display: inline-block;
 }
 
-li {
-  margin: 0 10px;
+.active {
+  color: red !important;
+  font-weight: bolder;
 }
 
 #background {
@@ -38,4 +33,11 @@ li {
   z-index: -100;
 }
 
-@import 'header', 'body', 'footer', 'post';
+#page {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  margin: 2% auto;
+  width: 80%;
+}
+
+@import 'header', 'page_body', 'footer', 'post';
