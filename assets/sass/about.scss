@@ -3,9 +3,8 @@
     display: flex;
     align-items: center;
     padding: 2% 2% 2% 10%;
-
     .image {
-      width: 10vw;
+      width: 20vw;
       display: inline-block;
       img {
         display: block;
@@ -13,12 +12,61 @@
       }
     }
     .detail_info {
-      display: inline-block;
-      margin-left: 5%;
-      ul {
-        list-style: none;
+      margin-left: 10%;
+      width: 100%;
+      .name {
+        display: block;
+        font-size: 300%;
+        font-weight: bold;
+        padding: 1% 1% 2%;
+      }
+      .introduction {
+        font-size: 250%;
+        display: block;
+        padding: 0 1%;
+        margin: 2% 0;
       }
     }
-
+  }
+  .sub_info {
+    list-style: none;
+    font-size: 120%;
+    li {
+      display: inline-block;
+      color: gray;
+      padding: 0 2%;
+    }
+  }
+  .title {
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    span {
+      display: inline-block;
+      font-size: 200%;
+    }
+    strong {
+      padding: 2%;
+      display: inline-block;
+      width: 50%;
+    }
+  }
+  .table, .list {
+    padding: 2%;
+    border-left: solid black 1px;
+    margin: 0 2%;
+    width: 100%;
+    font-size: 120%;
+  }
+  .table{
+    td{
+      padding: 1% 0;
+    }
+  }
+  .list{
+    list-style: none;
+    li{
+      padding: 1% 0;
+    }
   }
 }
