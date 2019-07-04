@@ -8,3 +8,4 @@ markdown: kramdown
 sass:
     sass_dir: assets/sass
     style: compressed
+theme: jekyll-theme-time-machine
