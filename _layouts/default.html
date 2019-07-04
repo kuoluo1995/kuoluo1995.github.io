@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+<head>
+    <title>{{ site.title }}</title>
+    {% include head.html %}
+    {% include mathjax.html %}
+</head>
 <body>
 <div id='background'></div>
 <div id='page'>

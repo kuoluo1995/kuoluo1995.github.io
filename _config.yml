@@ -4,6 +4,7 @@ github_username: 'kuoluo1995@gmail.com'
 email: '799178334@qq.com'
 footer_description: '不会写前端的Java程序员，不是个好的深度学习研究者'
 
+markdown: kramdown
 sass:
-  sass_dir: assets/sass
-  style: compressed
+    sass_dir: assets/sass
+    style: compressed

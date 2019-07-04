@@ -8,7 +8,7 @@ priority: 1
     {% for post in site.posts limit:10 %}
         <li class='card'>
             <div class='card_header'>
-                <a href='{{ post.url }}' class='title'>{{ post.title }}</a>
+                <a href='{{ post.url }}' class='title'>{{ post.title | markdownify }}</a>
                 <div class='sub_title'>
                     <span>日期: {{ post.date | date: '%Y-%m-%d' }}</span>
                     <span>更新: {{ post.date | date: '%Y-%m-%d' }}</span>

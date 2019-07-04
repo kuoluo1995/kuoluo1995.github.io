@@ -1,36 +1,83 @@
 #post {
-  border-radius: 0 0 20px 20px;
-  padding: 5% 5% 0;
-
-  .title {
-    color: #000;
-    font-size: 300%;
-    margin: 1%;
-  }
-
-  .sub_title {
-    color: gray;
-
-    span {
-      padding: 0 2%;
-    }
-  }
-
-  .contest {
-    padding: 2%;
-  }
-
-  .card_footer {
-    padding: 2% 0;
-
-    ul {
-      color: gray;
-      float: right;
-      list-style: none;
+    .title {
+        font-size: 200%;
+        padding: 1%;
+        display: block;
+        font-weight: bolder;
     }
 
-    li {
-      display: inline-block;
+    .sub_title {
+        color: gray;
+
+        span {
+            padding: 0 2%;
+        }
     }
-  }
+
+    .contest {
+        padding: 2%;
+
+        h1 {
+            font-size: 150%;
+            margin: 3% 0 2%;
+        }
+
+        h2 {
+            font-size: 120%;
+            margin: 1% 0 1% 4%;
+        }
+
+        ul {
+            margin-left: 4%;
+            padding-inline-start: 40px;
+
+            li {
+                padding: 1% 0;
+            }
+        }
+
+        ol {
+            margin-left: 4%;
+            padding-inline-start: 40px;
+
+            li {
+                padding: 1% 0;
+            }
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 1vw 0.5vh;
+            border-top: solid 1px black;
+            margin: 2% 4%;
+
+            th {
+                border-bottom: solid 1px black;
+            }
+        }
+
+        .image {
+            text-align: center;
+            image {
+                width: 80%;
+            }
+            .image_alt {
+                font-size: 80%;
+            }
+        }
+    }
+
+    .card_footer {
+        ul {
+            display: block;
+            color: gray;
+            list-style: none;
+            text-align: right;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 2%;
+        }
+    }
 }
