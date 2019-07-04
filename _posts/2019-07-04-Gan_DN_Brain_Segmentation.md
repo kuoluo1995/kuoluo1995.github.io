@@ -1,10 +1,10 @@
 ---
 layout: post
-update: 2019-06-29
+update: 2019-07-04
 title:  论文总结:Adversarial training and dilated convolutions for brain MRI segmentation<sup>[1]</sup>
 categories: deep_learning
 tags: [Gan,DN]
-abstract: Adversarial training and dilated convolutions for brain MRI segmentation的论文总结
+abstract: 这篇文章很好的介绍了如何使用Gan网络做医学图像分割
 ---
 
 # 数据集
