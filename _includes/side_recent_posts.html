@@ -1,0 +1,13 @@
+<div class='right_side'>
+    <span class='side_title'>Recent Posts</span>
+    <hr>
+    <ul class='side_posts'>
+        {% for post in site.posts limit:10 %}
+            <li>
+                <a href='{{ post.url }}'>
+                    <p class='overflow'>{{ post.title }}</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -2,7 +2,7 @@
     <span class='brand'>{{ site.title }}</span>
     <nav class='nav'>
         <ul>
-            {% assign my_pages=site.pages| sort: 'priority'| where: 'layout', 'page_body' %}
+            {% assign my_pages=site.pages | where: 'type','page' | sort: 'priority' %}
             {% for my_page in my_pages %}
                 <li>
                     <a href='{{ my_page.url }}' {% if page.url == my_page.url %}class='active'{% endif %}>

@@ -1,0 +1,15 @@
+<div class='post_recent'>
+    <hr>
+    {% if page.previous %}
+        <div class='post_li'>
+            <strong>上一篇</strong>
+            <a class='post_title' href='{{ page.previous.url }}'>{{ page.previous.title }}</a>
+        </div>
+    {% endif %}
+    {% if page.next %}
+        <div class='post_li'>
+            <strong>下一篇</strong>
+            <a class='post_title' href='{{ page.next.url }}'>{{ page.next.title }}</a>
+        </div>
+    {% endif %}
+</div>

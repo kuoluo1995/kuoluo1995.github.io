@@ -58,9 +58,13 @@
 
         .image {
             text-align: center;
-            image {
+            width: 100%;
+            display: block;
+
+            .src {
                 width: 80%;
             }
+
             .image_alt {
                 font-size: 80%;
             }
@@ -68,16 +72,16 @@
     }
 
     .card_footer {
-        ul {
-            display: block;
-            color: gray;
-            list-style: none;
-            text-align: right;
-        }
+    }
 
-        li {
-            display: inline-block;
-            padding: 0 2%;
+    .post_recent {
+        padding: 2% 0 0;
+        .post_li {
+            padding: 0.5% 0;
+            font-size: 100%;
+            .post_title{
+                margin-left: 1%;
+            }
         }
     }
 }

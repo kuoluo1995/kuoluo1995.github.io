@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div id='body'>
+    {% include header.html %}
+    <div id='site_body'>
+        {{ content }}
+    </div>
+    {% include footer.html %}
+</div>
+<div id='right_sides'>
+    {% include side_recent_posts.html %}
+    {% include side_categories.html %}
+    {% include side_tags.html %}
+</div>

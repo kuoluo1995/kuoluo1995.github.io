@@ -6,5 +6,5 @@ _site/
 # User-specific stuff
 .idea
 
-assets/sass/*.css
-assets/sass/*.map
+assets/scss/*.css
+assets/scss/*.map

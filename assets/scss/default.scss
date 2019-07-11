@@ -1,0 +1,85 @@
+
+* {
+    font-family: "Microsoft YaHei UI";
+}
+
+body, header, footer, ul, li, p, h1, h2, h3, div {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+sup {
+    font-size: 50%;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 1%;
+    font-size: 120%;
+}
+
+.active {
+    color: red !important;
+    font-weight: bolder;
+}
+
+.overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.right_footer {
+    display: inline-block;
+    float: right;
+    color: gray;
+}
+
+.tags {
+    display: inline-block;
+    li {
+        display: inline-block;
+        .iconfont {
+            display: inline-block;
+        }
+        .tag {
+            display: inline-block;
+        }
+    }
+}
+
+#background {
+    background: black url("../images/background.png") no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: -100;
+}
+
+#page {
+    text-align: center;
+}
+
+#body {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin: 2%;
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+}
+
+#site_body {
+    padding: 0 5%;
+    margin: 2% 0;
+}
+
+@import 'header', 'footer', 'right_sides', 'index', 'archives', 'categories', 'about', 'post';

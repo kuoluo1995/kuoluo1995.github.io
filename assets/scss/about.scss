@@ -5,7 +5,7 @@
         padding: 2% 2% 2% 10%;
 
         .image {
-            width: 20vw;
+            width: 10vw;
             display: inline-block;
 
             img {
@@ -20,13 +20,13 @@
 
             .name {
                 display: block;
-                font-size: 300%;
+                font-size: 150%;
                 font-weight: bold;
                 padding: 1% 1% 2%;
             }
 
             .introduction {
-                font-size: 250%;
+                font-size: 120%;
                 display: block;
                 padding: 0 1%;
                 margin: 2% 0;
@@ -36,7 +36,7 @@
 
     .sub_info {
         list-style: none;
-        font-size: 120%;
+        font-size: 80%;
 
         li {
             display: inline-block;
@@ -45,42 +45,40 @@
         }
     }
 
-    .title {
-        font-size: 200%;
-        display: flex;
-        align-items: center;
+    .content {
+        .title {
+            .iconfont {
+                display: inline-block;
+                font-size: 120%;
+            }
 
-        span {
-            display: inline-block;
-            font-size: 200%;
+            strong {
+                width: 50%;
+                padding: 1%;
+                display: inline-block;
+                font-size: 120%;
+            }
         }
 
-        strong {
-            padding: 2%;
-            display: inline-block;
-            width: 50%;
+        .table, .list {
+            padding: 0 2%;
+            border-left: solid black 1px;
+            margin: 0 0 0 1%;
+            width: 100%;
         }
-    }
 
-    .table, .list {
-        padding: 2%;
-        border-left: solid black 1px;
-        margin: 0 2%;
-        width: 100%;
-        font-size: 120%;
-    }
-
-    .table {
-        td {
-            padding: 1% 0;
+        .table {
+            td {
+                padding: 0.5% 0;
+            }
         }
-    }
 
-    .list {
-        list-style: none;
+        .list {
+            list-style: none;
 
-        li {
-            padding: 1% 0;
+            li {
+                padding: 0.5% 0;
+            }
         }
     }
 }

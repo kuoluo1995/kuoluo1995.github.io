@@ -1,8 +1,3 @@
-#body {
-    padding: 0 5%;
-    margin: 2% 0;
-}
-
 .list_posts {
     list-style: none;
 
@@ -11,9 +6,11 @@
         margin: 0 auto 2%;
 
         .title {
-            font-size: 200%;
+            font-size: 150%;
             padding: 1%;
             display: block;
+            font-weight: bolder;
+            text-shadow:2px 2px 3px #aaa;
         }
 
         .sub_title {
@@ -33,16 +30,6 @@
 
             .more {
                 color: black;
-            }
-
-            .tags {
-                color: gray;
-                float: right;
-                list-style: none;
-
-                li {
-                    display: inline-block;
-                }
             }
         }
     }

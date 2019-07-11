@@ -1,0 +1,14 @@
+<div class='right_side'>
+    <span class='side_title'>Categories</span>
+    <hr>
+    <ul class='side_categories'>
+        {% for category in site.categories %}
+            <li>
+                <a href='{{ root_url }}/{{ site.category_dir }}#{{ category[0] }}' class='category_title'>
+                    <span>{{ category[0] }}</span>
+                </a>
+                <span class='badge'>{{ category[1] | size }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

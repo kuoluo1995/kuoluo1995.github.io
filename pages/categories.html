@@ -1,0 +1,23 @@
+---
+layout: categories
+title: '分类'
+icon: icon-changjingguanli
+priority: 2
+type: page
+permalink: /categories
+---
+<ul id='list_categories'>
+    {% for category in site.categories %}
+        <li class='card_category'>
+            <span class='category_title'>{{ category[0] }}</span>
+            <ul class='list_posts'>
+                {% for post in category[1] %}
+                    <li class='post_info'>
+                        <time>{{ post.date | date: '%F' }}</time>
+                        <a class='post_title' href='{{ post.url }}'>{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>

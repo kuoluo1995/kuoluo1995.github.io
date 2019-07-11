@@ -1,0 +1,26 @@
+---
+layout: archives
+title: '归档'
+icon: icon-activity
+priority: 3
+type: page
+permalink: /archives
+---
+<ul id='list_archives'>
+    {% for post in site.posts %}
+        {% if post.next == nil %}{% comment %} post是倒序排列的，从最新的到最旧的 {% endcomment %}
+            <span class='year'>{{ post.date | date: '%Y' }}</span>
+        {% else %}
+            {% capture current_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+            {% capture next_year %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+            {% if current_year != next_year %}
+                <hr>
+                <span class='year'>{{ current_year }}</span>
+            {% endif %}
+        {% endif %}
+        <li class='post_info'>
+            <time>{{ post.date | date: '%F' }}</time>
+            <a class='post_title' href='{{ post.url }}'>{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

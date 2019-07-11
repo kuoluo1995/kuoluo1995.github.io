@@ -1,0 +1,19 @@
+<div class='right_side'>
+    <span class='side_title'>Archives</span>
+    <hr>
+    <ul class='side_archives'>
+        {% assign sum = 0 %}
+        {% for post in site.posts %}
+            {% assign current_year = post.date | date: "%Y" %}
+            {% assign previous_year = post.previous.date | date: "%Y" %}
+            {% assign sum = sum | plus: 1 %}
+            {% if current_year != previous_year %}
+                <li>
+                    <span>{{ current_year }}</span>
+                    <span class='badge'>{{ sum }}</span>
+                </li>
+                {% assign sum = 0 %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

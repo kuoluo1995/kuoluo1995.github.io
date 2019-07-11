@@ -1,19 +1,40 @@
 ---
-layout: page_body
+layout: default
 ---
-<div id='post'>
-    <span class='title'>{{ page.title | markdownify }}</span>
-    <div class='sub_title'>
-        <span>日期: {{ page.date | date: '%Y-%m-%d' }}</span>
-        <span>更新: {{ page.date | date: '%Y-%m-%d' }}</span>
-        <span>分类: {{ page.categories }}</span>
+<div id='body'>
+    {% include header.html %}
+    <div id='site_body'>
+        <div id='post'>
+            <span class='title'>{{ page.title | markdownify }}</span>
+            <div class='sub_title'>
+                <span>日期: {{ page.date | date: '%F' }}</span>
+                <span>更新: {{ page.date | date: '%F' }}</span>
+                <span>分类:
+                    {% for category in page.categories %}
+                        {% unless forloop.index == 1 %}
+                            ,
+                        {% endunless %}
+                        {{ category }}
+                    {% endfor %}
+                </span>
+                <span>标签:
+                    {% for tag in page.tags %}
+                        {% unless forloop.index == 1 %}
+                            ,
+                        {% endunless %}
+                        {{ tag }}
+                    {% endfor %}
+                </span>
+            </div>
+            <div class='contest'>{{ content }}</div>
+            <div class='card_footer'>
+                {% include footer_tags.html %}
+            </div>
+            {% include footer_post_recent.html %}
+        </div>
     </div>
-    <div class='contest'>{{ content }}</div>
-    <div class='card_footer'>
-        <ul>
-            {% for tag in page.tags %}
-                <li>#{{ tag }}</li>
-            {% endfor %}
-        </ul>
-    </div>
+    {% include footer.html %}
+</div>
+<div id='right_sides'>
+    {% include side_content.html %}
 </div>

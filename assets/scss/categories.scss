@@ -1,0 +1,30 @@
+#list_categories {
+    list-style: inside;
+    margin: auto;
+    .card_category {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        background-color: rgba(240,230,140,0.7);
+        padding: 2%;
+        border-radius: 20px;
+        .category_title {
+            display: block;
+            font-size: 140%;
+            margin: 3% 0;
+        }
+        .list_posts {
+            list-style: inside;
+            margin-left: 4%;
+            .post_info {
+                padding: 1% 0;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                time {
+                    color: gray;
+                }
+            }
+        }
+    }
+}

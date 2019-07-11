@@ -1,8 +1,8 @@
 ---
 layout: post
 update: 2019-07-04
-title:  论文总结:Adversarial training and dilated convolutions for brain MRI segmentation<sup>[1]</sup>
-categories: deep_learning
+title:  Adversarial training and dilated convolutions for brain MRI segmentation<sup>[1]</sup>
+categories: Summary
 tags: [Gan,DN]
 abstract: 这篇文章很好的介绍了如何使用Gan网络做医学图像分割
 ---
@@ -117,14 +117,14 @@ abstract: 这篇文章很好的介绍了如何使用Gan网络做医学图像分�
 ## 2. 分割的Dice结果变化
 
 <div class='image'>
-    <img src='/assets/images/posts/2019/07/04/2019-07-04-dc_results.png' alt='DC结果图'/>
+    <img class='src' src='/assets/images/posts/2019/07/04/2019-07-04-dc_results.png' alt='DC结果图'/>
     <div class='image_alt'>Dice结果泳道图</div>
 </div>
 
 ## 3. 展示效果图
 
 <div class='image'>
-    <img src='/assets/images/posts/2019/07/04/2019-07-04-image_result.png' alt='展示效果图'/>
+    <img class='src' src='/assets/images/posts/2019/07/04/2019-07-04-image_result.png' alt='展示效果图'/>
     <div class='image_alt'>展示效果图</div>
 </div>
 
