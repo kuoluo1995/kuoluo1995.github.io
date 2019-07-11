@@ -14,7 +14,7 @@
         {% endfor %}
         {% comment %} 再设置类型 {% endcomment %}
         {% for tag in site.tags %}
-            {% assign  font_size = tag[1].size | times: 120 | divided_by: max %}
+            {% assign  font_size = tag[1].size | times: 100 | divided_by: max %}
             {% assign  color = tag[1].size | times: 255 | divided_by: max %}
             {% assign  color = 255 | minus: color %}
             <span style='font-size: {{ font_size }}%; color: rgb({{ color }},{{ color }},{{ color }});'>{{ tag[0] }}</span>

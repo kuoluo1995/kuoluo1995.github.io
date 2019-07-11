@@ -2,7 +2,9 @@
 title: 阔落的博客
 footer_description: 不会写前端的Java程序员，不是个好的算法工程师
 markdown: kramdown
-
+data_dir: data
+includes_dir: pages/includes
+layouts_dir: pages/layouts
 sass:
     sass_dir: assets/scss
     style: compressed
