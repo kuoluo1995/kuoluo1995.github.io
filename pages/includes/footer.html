@@ -1,8 +1,9 @@
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <footer id='site_footer'>
     <hr>
     <p class='description'>{{ site.footer_description }}</p>
     <p class='contact'>
-        <p>本站总访问量<span id="busuanzi_value_site_pv"></span>次</p>
+        <span>本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
         <span>联系方式:</span>
         {% for item in site.data.contacts %}
             <a href='{{ item.url }}' title='{{ item.name }}' target="view_window">
