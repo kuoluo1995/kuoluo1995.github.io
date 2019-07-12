@@ -1,10 +1,10 @@
----
----
+@import 'style';
+
 * {
     font-family: "Microsoft YaHei UI";
 }
 
-body, header, footer, ul, li, p, h1, h2, h3, div {
+body, header, footer, ul, ol, li, p, h1, h2, h3, div {
     margin: 0;
     padding: 0;
 }
@@ -18,12 +18,6 @@ sup {
     font-size: 50%;
 }
 
-.nav ul li {
-    display: inline-block;
-    margin: 0 1%;
-    font-size: 120%;
-}
-
 .active {
     color: red !important;
     font-weight: bolder;
@@ -33,25 +27,6 @@ sup {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-
-.right_footer {
-    display: inline-block;
-    float: right;
-    color: gray;
-}
-
-.tags {
-    display: inline-block;
-    li {
-        display: inline-block;
-        .iconfont {
-            display: inline-block;
-        }
-        .tag {
-            display: inline-block;
-        }
-    }
 }
 
 #background {
@@ -70,17 +45,12 @@ sup {
 }
 
 #body {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    margin: 2%;
-    width: 70%;
-    display: inline-block;
-    text-align: left;
+    @include page_bubble($page_bubble_color, 60%, inline-block, 1%, $side_out_margin_value);
 }
 
 #site_body {
-    padding: 0 5%;
-    margin: 2% 0;
+    padding: 0 2%;
+    margin: $site_inside_margin_value 0;
 }
 
 @import 'header', 'footer', 'right_sides', 'index', 'archives', 'categories', 'about', 'post';

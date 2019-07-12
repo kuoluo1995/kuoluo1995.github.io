@@ -1,10 +1,10 @@
+@import 'style';
 #site_footer {
-    padding: 0 0 2%;
     margin: 2% 0 0;
     text-align: center;
 
     hr {
-        margin: 0 0 2%;
+        margin: 0 0 $site_inside_margin_value;
     }
     .contact {
         a {

@@ -8,6 +8,9 @@ type: page
 <ul class='list_posts'>
     {% for post in site.posts limit:10 %}
         <li class='card'>
+            {% unless forloop.first == true %}
+                <hr style='margin: 1% 0 2%'>
+            {% endunless %}
             <div class='card_header'>
                 <a href='{{ post.url }}' class='title'>{{ post.title | markdownify }}</a>
                 <div class='sub_title'>
@@ -19,9 +22,8 @@ type: page
             <div class='card_body'>{{ post.abstract }}</div>
             <div class='card_footer'>
                 <a href='{{ post.url }}' class='more'>查看全文</a>
-                <div class='right_footer'>
-                    {% include  footer_categories.html%}
-                    {% include  footer_tags.html%}
+                <div class='card_right_footer'>
+                    {% include  footer_tags.html %}
                 </div>
             </div>
         </li>

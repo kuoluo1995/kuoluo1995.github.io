@@ -1,35 +1,30 @@
+@import 'style';
+
 .list_posts {
     list-style: none;
 
     .card {
-        border-bottom: solid gray 1px;
-        margin: 0 auto 2%;
-
         .title {
-            font-size: 150%;
-            padding: 1%;
-            display: block;
-            font-weight: bolder;
-            text-shadow:2px 2px 3px #aaa;
+            @include title_style(140%)
         }
 
         .sub_title {
-            color: gray;
-
-            span {
-                padding: 0 2%;
-            }
+            @include sub_title
         }
 
         .card_body {
-            padding: 1%;
+            margin: $card_inside_value;
         }
 
         .card_footer {
-            padding: 2% 0;
+            padding: $card_inside_value;
 
             .more {
-                color: black;
+                @include sub_title
+            }
+
+            .card_right_footer {
+                @include right_footer
             }
         }
     }

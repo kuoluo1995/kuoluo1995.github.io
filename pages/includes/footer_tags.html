@@ -1,5 +1,8 @@
-<ul class='tags'>
+<div class='items'>
     {% for tag in post.tags %}
-        <li><span class='iconfont icon-tag'></span><span class='tag'>{{ tag }}</span></li>
+        <div class='item'>
+                <span class='iconfont icon-tag'></span>
+                <span>{{ tag }}</span>
+        </div>
     {% endfor %}
-</ul>
+</div>

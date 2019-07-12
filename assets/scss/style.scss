@@ -1,0 +1,69 @@
+// #spacing
+$side_out_margin_value: 2%;
+$site_inside_margin_value: 2%;
+$side_inside_margin_left: 10%;
+$card_inside_value: 1%;
+// #color
+$sub_title_color: gray;
+$page_bubble_color: rgba(255, 255, 255, 0.8);
+$card_bubble_color: rgba(240, 230, 140, 0.7);
+
+
+@mixin page_bubble($background_color: $page_bubble_color, $width: 100%, $display: block, $padding: 1%, $margin: 2%) {
+    background: $background_color;
+    border-radius: 20px;
+    display: $display;
+    width: $width;
+    padding: $padding;
+    margin: $margin;
+    text-align: left;
+}
+
+@mixin title_style($font_size: 120%, $margin: 1%) {
+    display: block;
+    font-size: $font_size;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #aaa;
+    margin: $margin;
+}
+
+@mixin sub_title {
+    color: $sub_title_color;
+    font-size: 90%;
+    span {
+        margin: 0 1.5%;
+    }
+}
+
+@mixin side_content($type: null,$list_style: none,$margin: 0,$padding: 2% 0) {
+    @if $type == 'ul' {
+        font-size: 90%;
+        margin: $margin;
+        ul, ol {
+            list-style: $list_style;
+
+            li {
+                padding: $padding;
+            }
+        }
+    } @else if $type == 'tags' {
+        margin: $margin;
+    }
+}
+
+@mixin right_footer {
+    display: inline-block;
+    float: right;
+    @include sub_title;
+    .items {
+        display: block;
+
+        .item {
+            display: inline-block;
+
+            span {
+                margin: 0;
+            }
+        }
+    }
+}

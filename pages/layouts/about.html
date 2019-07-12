@@ -13,18 +13,16 @@ layout: default
                 <div class='detail_info'>
                     <span class='name'>{{ data.detail_info.name }}</span>
                     <span class='introduction'>{{ data.detail_info.introduction }}</span>
-                    <ul class='sub_info'>
+                    <div class='sub_info'>
                         {% for info in data.detail_info.sub_info %}
-                            <li>
-                                {% if info.icon %}
-                                    <span class='iconfont {{ info.icon }}'></span>
-                                {% endif %}
-                                {% if info.name %}
-                                    {{ info.name }}
-                                {% endif %}
-                            </li>
+                            {% if info.icon %}
+                                <span class='iconfont {{ info.icon }}'></span>
+                            {% endif %}
+                            {% if info.name %}
+                                <span>{{ info.name }}</span>
+                            {% endif %}
                         {% endfor %}
-                    </ul>
+                    </div>
                 </div>
             </div>
             <div class='content'>
@@ -35,7 +33,7 @@ layout: default
                     {% if item.tr %}
                         <table class='table'>
                             {% for td in item.tr %}
-                                <tr class='school'>
+                                <tr>
                                     <td>{{ td.date }}</td>
                                     <td>{{ td.organization }}</td>
                                     <td>{{ td.job }}</td>
@@ -46,7 +44,9 @@ layout: default
                     {% if item.list %}
                         <ul class='list'>
                             {% for li in item.list %}
-                                <li>{{ li }}</li>
+                                <li>
+                                    <time>{{ li.date }}</time>
+                                    <span>{{ li.content }}</span></li>
                             {% endfor %}
                         </ul>
                     {% endif %}

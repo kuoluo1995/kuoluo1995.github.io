@@ -1,5 +1,8 @@
-<ul class='tags'>
+<div class='items'>
     {% for category in post.categories %}
-        <li><span class='iconfont icon-liebiao'></span>{{ category }}</li>
+        <div class='item'>
+                <span class='iconfont icon-liebiao'></span>
+                <span>{{ category }}</span>
+        </div>
     {% endfor %}
-</ul>
+</div>

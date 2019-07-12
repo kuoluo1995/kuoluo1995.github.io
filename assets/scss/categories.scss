@@ -1,28 +1,36 @@
-#list_categories {
-    list-style: inside;
+@import 'style';
+
+#card_categories {
+    display: block;
     margin: auto;
-    .card_category {
-        display: inline-block;
-        width: 45%;
+    text-align: center;
+
+    .card {
+        @include page_bubble($card_bubble_color, 42%, inline-block, 1.8%, 1%);
         vertical-align: top;
-        background-color: rgba(240,230,140,0.7);
-        padding: 2%;
-        border-radius: 20px;
-        .category_title {
-            display: block;
-            font-size: 140%;
-            margin: 3% 0;
+        text-align: left;
+
+        .title {
+            @include title_style(120%, 1%)
         }
-        .list_posts {
-            list-style: inside;
-            margin-left: 4%;
-            .post_info {
-                padding: 1% 0;
-                overflow: hidden;
-                text-overflow:ellipsis;
-                white-space: nowrap;
-                time {
-                    color: gray;
+
+        .content {
+            ul {
+                list-style: disc;
+                margin-left: 10%;
+
+                li {
+                    a {
+                        display: block;
+
+                        time {
+                            color: $sub_title_color;
+                        }
+
+                        span {
+                            margin-left: 1%;
+                        }
+                    }
                 }
             }
         }
