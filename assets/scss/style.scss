@@ -67,3 +67,16 @@ $card_bubble_color: rgba(240, 230, 140, 0.7);
         }
     }
 }
+
+@mixin for_ul($start,$end) {
+    @if $start != $end {
+        ul {
+            padding: 0 0 0 if($start==0,0,4%);
+
+            li {
+                padding: 0.4%*($end - $start) 0 0.5% 0;
+                @include for_ul($start + 1, $end);
+            }
+        }
+    }
+}

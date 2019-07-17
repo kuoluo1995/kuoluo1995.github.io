@@ -1,3 +1,5 @@
+@import "style";
+
 #post {
     .title {
         font-size: 200%;
@@ -16,32 +18,28 @@
 
     .contest {
         padding: 2%;
-
-        h1 {
-            font-size: 150%;
-            margin: 3% 0 2%;
-        }
-
-        h2 {
-            font-size: 120%;
-            margin: 1% 0 1% 4%;
-        }
+        @include for_ul(0, 6);
 
         ul {
-            margin-left: 4%;
-            padding-inline-start: 40px;
-
-            li {
-                padding: 1% 0;
-            }
+            list-style: none;
         }
 
         ol {
-            margin-left: 4%;
-            padding-inline-start: 40px;
+            list-style: none;
+            padding: 0 2%;
 
-            li {
-                padding: 1% 0;
+            ul {
+                list-style: disc;
+            }
+
+            ol {
+                list-style: decimal;
+            }
+        }
+
+        @for $i from 1 through 5 {
+            h#{$i} {
+                font-size: (100%+(6-$i)*10%);
             }
         }
 
@@ -49,7 +47,6 @@
             border-collapse: separate;
             border-spacing: 1vw 0.5vh;
             border-top: solid 1px black;
-            margin: 2% 4%;
 
             th {
                 border-bottom: solid 1px black;
@@ -71,15 +68,11 @@
         }
     }
 
-    .card_footer {
-    }
-
     .post_recent {
-        padding: 2% 0 0;
         .post_li {
-            padding: 0.5% 0;
             font-size: 100%;
-            .post_title{
+
+            .post_title {
                 margin-left: 1%;
             }
         }
