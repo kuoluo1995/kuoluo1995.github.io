@@ -3,6 +3,9 @@ title: 阔落的博客
 
 highlighter: rouge
 markdown: kramdown
+gems: [jekyll-mermaid]
+mermaid:
+    src: 'assets/js/mermaid.js'
 kramdown:
     input: GFM
     syntax_highlighter: rouge
