@@ -5,8 +5,8 @@
     <script>
         var gitment = new Gitment({
             id: '{{ page.date }}-{{ page.title }}',
-            owner: {{ site.github.username }},
-            repo: {{ site.github.repo }},
+            owner: '{{ site.github.username }}',
+            repo: '{{ site.github.repo }}',
             oauth: {
                 client_id: '{{ site.github.clientId }}',
                 client_secret: '{{ site.github.clientSecret }}',
