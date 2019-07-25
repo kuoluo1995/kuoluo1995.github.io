@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://www.wenjunjiang.win/css/gitment.css"/>
     <script>
         var gitment = new Gitment({
+            id: '{{ page.date }}-{{ page.title }}',
             owner: {{ site.github.username }},
             repo: {{ site.github.repo }},
             oauth: {
