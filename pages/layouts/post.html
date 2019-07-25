@@ -26,7 +26,7 @@ layout: default
                     {% endfor %}
                 </span>
             </div>
-            <div class='contest'>{{ content }}</div>
+            <div class='contest'>{{ content | replace: '<pre class="','<pre class="line-numbers ' }}</div>
             <div class='card_footer'>
                 {% include footer_tags.html %}
             </div>
