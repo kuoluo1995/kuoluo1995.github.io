@@ -14,8 +14,8 @@ sass:
     style: compressed
 
 github:
-    username: kuoluo1995
-    repo: kuoluo1995.github.io
+    username: 'kuoluo1995'
+    repo: 'kuoluo1995.github.io'
     clientId: c9f6380ba6482d9e19a4
     clientSecret: 2ea7c5989d0983e2d35c3e3b21e7acbc9d81e5b9
 
