@@ -13,9 +13,9 @@ sass:
     sass_dir: assets/scss
     style: compressed
 
-github:
+gitment:
     username: kuoluo1995
-    repo: kuoluo1995/kuoluo1995.github.io
+    repo: kuoluo1995.github.io
     id: c9f6380ba6482d9e19a4
     secret: 2ea7c5989d0983e2d35c3e3b21e7acbc9d81e5b9
 
