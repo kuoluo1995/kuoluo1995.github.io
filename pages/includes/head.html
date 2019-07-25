@@ -6,26 +6,35 @@
 <link rel='icon' href='/assets/ico/favicon.ico?' type='image/x-icon'>
 <link rel='stylesheet' href='/assets/ico/iconfont.css'>
 <link rel='stylesheet' href='/assets/scss/default.css'>
-<link rel="stylesheet" href='/assets/css/prism.css'>
-<script src='/assets/js/prism.js'></script>
-<script src="/assets/js/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
-<script>
-    //百度统计代码
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement('script');
-        hm.src = 'https://hm.baidu.com/hm.js?{{ site.baidu_id }}';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144583819-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+{% if page.code_highlight %}
+    <link rel="stylesheet" href='/assets/css/prism.css'>
+    <script src='/assets/js/prism.js'></script>
+{% endif %}
+{% if page.mermaid %}
+    <script src="/assets/js/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+{% endif %}
 
-    gtag('config', '{{ site.google_id }}');
-</script>
+{% if site.baidu_id %}
+    <script>
+        //百度统计代码
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?{{ site.baidu_id }}';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+{% endif %}
+{% if site.google_id %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144583819-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ site.google_id }}');
+    </script>
+{% endif %}

@@ -1,0 +1,15 @@
+{% if page.gitment %}
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '{{ site.github.username }}',
+            repo: '{{ site.github.repo }}',
+            oauth: {
+                client_id: '{{ site.github.id }}',
+                client_secret: '{{ site.github.secret }}',
+            },
+        });
+        gitment.render('gitmentContainer');
+    </script>
+{% endif %}

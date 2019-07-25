@@ -69,7 +69,10 @@
             }
         }
     }
-
+    .card_right_footer {
+        @include right_footer;
+        margin-top: -18px;
+    }
     .post_recent {
         .post_li {
             font-size: 100%;

@@ -28,9 +28,10 @@ layout: default
             </div>
             <div class='contest'>{{ content | replace: '<pre class="','<pre class="line-numbers ' }}</div>
             <div class='card_footer'>
-                {% include footer_tags.html %}
+                <div class='card_right_footer'>{% include footer_tags.html %}</div>
             </div>
             {% include footer_post_recent.html %}
+            <div id="gitmentContainer"></div>
         </div>
     </div>
     {% include footer.html %}

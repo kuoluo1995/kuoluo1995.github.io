@@ -13,6 +13,11 @@ sass:
     sass_dir: assets/scss
     style: compressed
 
+github:
+    username: kuoluo1995
+    repo: kuoluo1995/kuoluo1995.github.io
+    id: c9f6380ba6482d9e19a4
+    secret: 2ea7c5989d0983e2d35c3e3b21e7acbc9d81e5b9
 
 baidu_id: dbb88ff54ff24c582ace1c91136e8461
 google_id: UA-144583819-1

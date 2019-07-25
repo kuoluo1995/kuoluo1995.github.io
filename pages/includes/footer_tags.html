@@ -1,8 +1,13 @@
 <div class='items'>
-    {% for tag in post.tags %}
+    {% if post.tags | size > 0%}
+        {% assign tags=post.tags%}
+    {% else %}
+        {% assign tags=page.tags%}
+    {% endif %}
+    {% for tag in tags %}
         <div class='item'>
-                <span class='iconfont icon-tag'></span>
-                <span>{{ tag }}</span>
+            <span class='iconfont icon-tag'></span>
+            <span>{{ tag }}</span>
         </div>
     {% endfor %}
 </div>
