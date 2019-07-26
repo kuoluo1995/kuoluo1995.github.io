@@ -6,6 +6,7 @@
     text-align: left;
     width: 16%;
     margin-top: $side_out_margin_value;
+    position: fixed;
 
     .right_side {
         @include page_bubble($page_bubble_color, 100%, block, 8%, 4% 0);
@@ -23,11 +24,23 @@
         }
 
         .side_categories {
-            @include side_content('ul',decimal, 0 0 0 $side_inside_margin_left);
+            @include side_content('ul', decimal, 0 0 0 $side_inside_margin_left);
         }
 
         .side_tags {
             @include side_content('tags', none, 2%);
+        }
+
+        #page_content_side {
+            ul {
+                list-style: none;
+                margin-left: 5%;
+                li {
+                    ul {
+                        padding-left: 10%;
+                    }
+                }
+            }
         }
 
         .badge {

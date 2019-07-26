@@ -45,6 +45,7 @@ sup {
 
 #body {
     @include page_bubble($page_bubble_color, 60%, inline-block, 1%, $side_out_margin_value);
+    margin-left: -10%;
 }
 
 #site_body {

@@ -68,10 +68,10 @@ $card_bubble_color: rgba(240, 230, 140, 0.7);
     }
 }
 
-@mixin for_ul($start,$end) {
+@mixin for_ul($start,$end,$padding_left:4%) {
     @if $start != $end {
         ul {
-            padding: 0 0 0 if($start==0,0,4%);
+            padding: 0 0 0 if($start==0, 0, $padding_left);
 
             li {
                 padding: 0.4%*($end - $start) 0 0.5% 0;
