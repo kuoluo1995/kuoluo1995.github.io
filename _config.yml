@@ -4,6 +4,7 @@ title: 阔落的博客
 highlighter: rouge
 markdown: kramdown
 toc_levels: 1..2
+timezone: Asia/Shanghai
 kramdown:
     input: GFM
     syntax_highlighter: rouge
