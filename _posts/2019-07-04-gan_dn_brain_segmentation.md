@@ -1,6 +1,6 @@
 ---
 layout: post
-update: 2019-07-04
+update: 2019-07-04 01:00:00 +0800
 title:  Adversarial training and dilated convolutions for brain MRI segmentation
 categories: Summary
 tags: [Gan,DN]
