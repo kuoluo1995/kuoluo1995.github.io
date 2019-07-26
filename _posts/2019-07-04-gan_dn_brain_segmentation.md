@@ -64,7 +64,7 @@ gitment: true
 * # 三、对抗训练
     * ## 1.流程图
         *   <div  class='image'>
-                <img src='/assets/images/posts/2019/07/04/2019-07-04-adversarial_training.png' alt='训练流程图'/>
+                <img src='/assets/images/posts/2019/07/04/2019-07-04-adversarial_training.gif' alt='训练流程图'/>
                 <div class='image_alt'>训练流程图</div>
             </div>
     * ## 2.理论
@@ -92,12 +92,12 @@ gitment: true
             * **DN**: ($601\pm104$) --> ($481\pm90$)
     * ## 2. 分割的Dice结果变化
         *   <div class='image'>
-                <img class='src' src='/assets/images/posts/2019/07/04/2019-07-04-dc_results.png' alt='DC结果图'/>
+                <img class='src' src='/assets/images/posts/2019/07/04/2019-07-04-dc_results.gif' alt='DC结果图'/>
                 <div class='image_alt'>Dice结果泳道图</div>
             </div>
     * ## 3. 展示效果图
         *   <div class='image'>
-                <img class='src' src='/assets/images/posts/2019/07/04/2019-07-04-image_result.png' alt='展示效果图'/>
+                <img class='src' src='/assets/images/posts/2019/07/04/2019-07-04-image_result.gif' alt='展示效果图'/>
                 <div class='image_alt'>展示效果图</div>
             </div>
 * # 五、分析
