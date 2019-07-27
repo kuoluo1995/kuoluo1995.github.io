@@ -1,17 +1,17 @@
 {% if page.gitment %}
-    <div id="gitmentContainer"></div>
-    <script src="https://www.wenjunjiang.win/js/gitment.js"></script>
-    <link rel="stylesheet" href="https://www.wenjunjiang.win/css/gitment.css"/>
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-        var gitment = new Gitment({
-            id: '{{ page.date }}',
-            owner: '{{ site.github.username }}',
+        const gitalk = new Gitalk({
+            clientID: '{{ site.github.clientId }}',
+            clientSecret: '{{ site.github.clientSecret }}',
             repo: '{{ site.github.repo }}',
-            oauth: {
-                client_id: '{{ site.github.clientId }}',
-                client_secret: '{{ site.github.clientSecret }}',
-            },
+            owner: '{{ site.github.username }}',
+            admin: ['{{ site.github.username }}'],
+            id: '{{ page.date }}',      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
         });
-        gitment.render('gitmentContainer');
+        gitalk.render('gitalk-container')
     </script>
 {% endif %}
