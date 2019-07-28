@@ -1,5 +1,23 @@
 @import 'style';
 
+.pagination_div {
+    text-align: center;
+
+    .pagination {
+        border: #1b1f23 2px solid;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 2px 2%;
+        font-weight: bolder;
+        .enable{
+            color: black;
+        }
+        .disable {
+            color: grey;
+        }
+    }
+}
+
 .list_posts {
     list-style: none;
 

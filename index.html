@@ -6,7 +6,7 @@ priority: 1
 type: page
 ---
 <ul class='list_posts'>
-    {% for post in site.posts limit:10 %}
+    {% for post in paginator.posts %}
         <li class='card'>
             {% unless forloop.first == true %}
                 <hr style='margin: 1% 0 2%'>

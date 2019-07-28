@@ -1,0 +1,29 @@
+{% if paginator.total_pages > 1 %}
+    <div class='pagination_div'>
+        <div class='pagination'>
+            {% if paginator.previous_page %}
+                <a href='{{ paginator.previous_page_path }}'><span class='iconfont icon-shangyibu enable'></span></a>
+            {% else %}
+                <span class='iconfont icon-shangyibu disable'></span>
+            {% endif %}
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                    <span class='active enable'>{{ page }}</span>
+                    {% elsif page == 1 %}
+                    <a href='/index.html' class='enable'>
+                        {{ page }}
+                    </a>
+                {% else %}
+                    <a href='{{ site.paginate_path | replace: ':num', page }}' class='enable'>
+                        {{ page }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+            {% if paginator.next_page %}
+                <a href='{{ paginator.next_page_path }}'><span class='iconfont icon-xiayibu  enable'></span></a>
+            {% else %}
+                <span class='iconfont icon-xiayibu disable'></span>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

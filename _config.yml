@@ -5,6 +5,9 @@ highlighter: rouge
 markdown: kramdown
 toc_levels: 1..2
 timezone: Asia/Shanghai
+paginate: 10
+plugins: [jekyll-paginate]
+paginate_path: 'index/:num/'
 kramdown:
     input: GFM
     syntax_highlighter: rouge
