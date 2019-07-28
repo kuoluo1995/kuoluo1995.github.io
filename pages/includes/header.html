@@ -3,6 +3,11 @@
     <nav class='nav'>
         <ul>
             {% assign my_pages=site.pages | where: 'type','page' | sort: 'priority' %}
+            <li>
+                <a {% if page.url == '/' or page.url contains 'index' %} class='active'{% endif %}href='/'>
+                    <span class='iconfont icon-homepage'></span>首页
+                </a>
+            </li>
             {% for my_page in my_pages %}
                 <li>
                     <a href='{{ my_page.url }}' {% if page.url == my_page.url %}class='active'{% endif %}>
